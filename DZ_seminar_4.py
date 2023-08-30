@@ -33,7 +33,7 @@
 
 #ВАРИАНТ 1 случайное количество ягод на кустах
 # from random import randint
-# length = list(randint(1, 5) for i in range(int(input('Введите кол-во кустов: '))))
+# length = list(randint(1, 50) for i in range(int(input('Введите кол-во кустов: '))))
 # print(length)
 # bush = int(input('Введите № куста: '))
 # berrys = 0
