@@ -21,7 +21,26 @@ elif heads == tails:
     print(f'Количество орлов и решек одинаково, переверните любые {heads} монет')
 else:
     print((f'Переверните {heads} монет с орла на решку'))
-    
+
+
+#Второй вариант решения по новым заданиям
+
+#coins = [0, 1, 0, 1, 1, 0]
+
+# Введите ваше решение ниже
+
+heads = 0
+tails = 0
+
+for i in coins:
+    if i == 0:
+        heads += 1
+    else:
+        tails += 1
+if tails > heads:
+     print(heads)
+else:
+    print(tails)
     
     
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. 
@@ -56,3 +75,18 @@ for i in range(N):
             stop = 1
     else:
         i = N
+        
+#Второй вариант решения по новым заданиям
+
+stop = 0
+step = 2
+for i in range(n):
+    if stop != 1:
+        step = step ** i
+        if step <= n:
+            print(step, end =  '\n')
+            step = 2
+        else:
+            stop = 1
+    else:
+        i = n
